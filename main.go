@@ -12,7 +12,7 @@ var index map[string][]int
 func main() {
 	p := profile.Start(profile.MemProfile, profile.ProfilePath("."), profile.NoShutdownHook)
 	// initialize representation
-	index, _ = iindex.MakeIndex("/home/rhibbitts/Dropbox/Notes/WorkNotes")
+	index, _ = iindex.IndexDirectory("/home/rhibbitts/Dropbox/Notes/WorkNotes")
 	// run  user interface
 	ui()
 	p.Stop()
