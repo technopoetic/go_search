@@ -13,7 +13,7 @@ func main() {
 	p := profile.Start(profile.MemProfile, profile.ProfilePath("."), profile.NoShutdownHook)
 	// initialize representation
 	index, _ = iindex.MakeIndex("/home/rhibbitts/Dropbox/Notes/WorkNotes")
-	// run user interface
+	// run  user interface
 	ui()
 	p.Stop()
 }
